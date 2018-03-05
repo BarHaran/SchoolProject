@@ -7,7 +7,7 @@ public class EnemyControl : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    int damage;
+    int health;
     int speed;
 
     private void Awake()
@@ -23,15 +23,15 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
-    public int Damage
-    {
-        get { return damage; }
-        set { damage = value; }
-    }
-
     public int Speed
     {
         get { return speed; }
         set { speed = value; }
+    }
+
+    public int Health
+    {
+        get { return health; }
+        set { health = value; }
     }
 }
